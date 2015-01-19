@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="67dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/tab_list"
+        android:contentDescription="@string/tab_daily"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tab_List"
+        android:id="@+id/textView2"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:textColor="@drawable/button_color" />
+</LinearLayout>

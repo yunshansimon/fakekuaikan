@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/mainLayout">
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tabHost">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:tabStripEnabled="false"
+                    android:layout_alignParentBottom="true"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@android:id/tabs">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="51dp"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/kuaikan_title"
+                            android:background="#fffcbf18" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tab3"/>
+                        </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </TabHost>
+</RelativeLayout>
+

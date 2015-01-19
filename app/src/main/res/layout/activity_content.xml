@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yangtsao.fakekuaikan.ContentActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="漫画内容"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="28dp"
+            android:textColor="#f5e6b217"
+            android:background="#ffcecece" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:id="@+id/butContent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#fffcbf18"
+            android:textSize="40dp"
+            android:singleLine="false"
+            style="@android:style/Holo.ButtonBar" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgWaiting"
+            android:src="@drawable/kuaikuai_waiting"
+            android:background="#ffe8e8e8" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lvContent" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>
